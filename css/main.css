@@ -175,6 +175,8 @@ body {
     margin-right: 0; }
   .project:nth-child(2n+1) {
     clear: left; }
+  .project a:hover {
+    text-decoration: none; }
   .project h4 {
     background: transparent;
     text-align: center;
