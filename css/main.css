@@ -1,0 +1,253 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab);
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: black;
+  background-image: url("https://c2.staticflickr.com/4/3416/3279218533_9ba89a39f9_b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white; }
+  body p {
+    color: #cfcfcf; }
+  body a {
+    color: #4bd3ed;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s; }
+    body a:hover {
+      color: #29c990;
+      text-decoration: underline;
+      transition: 0.3s; }
+
+.header {
+  margin: 0px;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.35);
+  text-align: center; }
+  .header::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .header h1 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 25.58941%;
+    font-size: 46px;
+    font-family: 'Josefin Slab', serif;
+    margin-bottom: 0px;
+    margin-top: 25px; }
+    .header h1:last-child {
+      margin-right: 0; }
+    .header h1 a {
+      cursor: default;
+      font-family: 'Josefin Slab', serif;
+      font-size: 65px;
+      background: -webkit-linear-gradient(#29c990, #4bd3ed);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .header h1:hover {
+      text-decoration: none; }
+  .header .navWrapper {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .header .navWrapper:last-child {
+      margin-right: 0; }
+    .header .navWrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+  .header .fa {
+    color: #4bd3ed;
+    font-size: 32px;
+    margin-top: 46px;
+    margin-left: 10px;
+    transition: 0.3s;
+    cursor: pointer; }
+    .header .fa:hover {
+      color: #29c990;
+      transition: 0.3s; }
+
+.aboutMeWrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .aboutMeWrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.aboutMe {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  padding-left: 40px; }
+  .aboutMe:last-child {
+    margin-right: 0; }
+  .aboutMe h2 {
+    text-align: center; }
+  .aboutMe div {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 25.58941%;
+    font-size: 14px;
+    text-align: center; }
+    .aboutMe div:last-child {
+      margin-right: 0; }
+
+.dev {
+  display: none;
+  opacity: 0; }
+
+.songwriter {
+  display: none;
+  opacity: 0; }
+
+.climber {
+  display: none;
+  opacity: 0; }
+
+.active {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  display: block;
+  opacity: 1; }
+  .active:last-child {
+    margin-right: 0; }
+
+.projects {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .projects::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .projects #drobe {
+    background-image: url("http://res.cloudinary.com/lum6v4htc/image/upload/c_fit,h_357/v1452996673/drobe_luiixf.png"); }
+  .projects #twitter {
+    background-image: url("http://res.cloudinary.com/lum6v4htc/image/upload/c_scale,h_209,q_100,w_321/v1452996748/twitter_eahhdf.png");
+    background-position: center; }
+  .projects #skate {
+    background-image: url("http://res.cloudinary.com/lum6v4htc/image/upload/c_scale,h_288/v1452996688/skater_vsfkab.png");
+    background-position: top; }
+  .projects #surf {
+    background-image: url("http://res.cloudinary.com/lum6v4htc/image/upload/c_scale,w_597/v1453186033/Screen_Shot_2016-01-19_at_12.46.37_AM_udmm2z.png");
+    background-position: center; }
+
+.project {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-top: 25px;
+  position: relative;
+  height: 200px;
+  background: rgba(164, 164, 164, 0.4);
+  -webkit-filter: grayscale(1);
+  border: 3px solid white;
+  overflow: hidden;
+  transition: 0.5s; }
+  .project:last-child {
+    margin-right: 0; }
+  .project:nth-child(2n) {
+    margin-right: 0; }
+  .project:nth-child(2n+1) {
+    clear: left; }
+  .project h4 {
+    background: transparent;
+    text-align: center;
+    color: #181818;
+    font-weight: bold;
+    font-size: 36px; }
+  .project .pWrapper {
+    padding-top: 5px;
+    position: relative;
+    bottom: -5px;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 60px; }
+  .project p {
+    margin-left: 3px;
+    margin-right: 3px;
+    background: transparent;
+    font-size: 12px;
+    text-align: center;
+    transition: 0.7s; }
+  .project:hover {
+    transition: .7s;
+    -webkit-filter: grayscale(0); }
+    .project:hover p {
+      transition: 0.7s;
+      color: white; }
+
+.resume-section {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .resume-section::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .resume-section .resume {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    margin-left: 42.64902%;
+    height: 45px;
+    margin-top: 25px;
+    text-align: center;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 30px;
+    padding-top: 6px;
+    background-color: rgba(0, 0, 0, 0.4); }
+    .resume-section .resume:last-child {
+      margin-right: 0; }
+    .resume-section .resume:hover {
+      text-decoration: none;
+      border: 2px solid #29c990;
+      color: #29c990; }
+
+.footer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 10px; }
+  .footer::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .footer .links {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 34.11922%; }
+    .footer .links:last-child {
+      margin-right: 0; }
+  .footer .fa {
+    margin-left: 10px;
+    margin-right: 5px; }
